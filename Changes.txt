@@ -1,0 +1,81 @@
+
+
+<---------------------CSS------------------->
+.armper-ca,
+	.armper-ca-bn {
+		margin: 0px 0px 25px 0px;
+		padding:10px 0px 10px 10px;
+		display: inline-block;
+		vertical-align: top;
+		background-color:#DFEFCF;
+		border-radius: 4px;
+	}
+	.armper-ca img,
+	.armper-ca-bn img {
+		width: 50px;
+		float: left;
+	}
+	.armper-ca i,
+	.armper-ca-bn i {
+		width: 50px;
+		float: left;
+	}
+	.armper-ca h3 {
+		padding: 1px 20px 0px 60px !important;
+		line-height:20px;
+		font-size:15px;
+	}
+	.armper-ca-bn h3 {
+		padding:1px 20px 0px 60px !important;
+		line-height:20px;
+		font-size:16px;
+		font-family: SolaimanLipi;
+	}
+	.armper-ca i.icon:before,
+	.armper-ca-bn i.icon:before {
+		height: 50px;
+		width: 50px;
+		background-color: #ffffff;
+		border-radius: 100px;
+		color: #689f38;
+		text-align: center;
+		padding: 12px 0px 0px 3px;
+		float: left;
+	}
+	.armper-ca i.icon,
+	.armper-ca-bn i.icon {
+		display: block;
+		font-size: 30px;
+		margin: 0px 0px 0px 0px;
+		color: #ffffff;
+	}
+
+
+<---------------------HTML------------------->
+<div class="armper-ca">
+                                    <i class="icon icon-rank"></i>
+                                    <h3>Welcome to 'Create Account' on bdjobs.com. If you are retired army person, you can add your army experience at Employment section in Edit Resume after creating your account.</h3>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

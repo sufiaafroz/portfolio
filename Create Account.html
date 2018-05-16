@@ -1,0 +1,1608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0048)http://mybdjobs.bdjobs.com/createaccount.asp?q=A -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>Create Account </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="css/style.css">-->
+<!--<link rel="stylesheet" type="text/css" href="/../../fonts/web-icon.css">-->
+<!-- Responsive StyleSheet -->
+<!--<link rel="stylesheet" href="css/responsive.css">-->
+<link rel="stylesheet" href="./Create Account_files/datepicker.css">
+<link rel="stylesheet" href="./Create Account_files/catagory.css">
+<link href="./Create Account_files/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+<!-- Google Fonts -->
+
+
+<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">-->
+<!--<script src="js/jquery-2.0.2.js" type="text/javascript"></script>-->
+<!--<script src="js/new_jqyery.js" type="text/javascript"></script>-->
+<!--<SCRIPT language="JavaScript" src="js/step_01_common.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="js/common.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="js/validation.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="js/personal_Edit.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="js/charCount.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="js/_DateValidation.js"></SCRIPT>-->
+<!--<SCRIPT type="text/javascript"  src="common_new.js"></SCRIPT>-->
+<script src="./Create Account_files/cb=gapi(1).loaded_0" async=""></script><script id="facebook-jssdk" src="./Create Account_files/sdk.js.download"></script><script type="text/javascript" async="" src="./Create Account_files/mybdjobs.bdjobs.com.js.download"></script><script async="" src="./Create Account_files/log.js.download"></script><script async="" src="./Create Account_files/analytics.js.download"></script><script language="JavaScript" src="./Create Account_files/_DateValidation.js.download"></script>
+<script type="text/javascript" src="./Create Account_files/registrationValidation.js.download"></script>
+<script type="text/javascript" src="./Create Account_files/jquery-migrate-1.0.0.js.download"></script>
+<script type="text/javascript" src="./Create Account_files/jquery.fancybox.js.download"></script>
+<script type="text/javascript" src="./Create Account_files/superplaceholder.js.download"></script>
+
+
+    <link rel="stylesheet" href="./Create Account_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Create Account_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./Create Account_files/web-icon.css">
+    <link rel="stylesheet" href="./Create Account_files/responsive.css">
+    <script src="./Create Account_files/jquery-2.0.2.js.download" type="text/javascript"></script>
+    <script src="./Create Account_files/new_jqyery.js.download" type="text/javascript"></script>
+     <link href="./Create Account_files/css" rel="stylesheet" type="text/css">
+      <link href="./Create Account_files/css(1)" rel="stylesheet">
+
+
+<!--<link rel="stylesheet" type="text/css" href="/../fonts/web-icon.css">
+<link rel="stylesheet" href="/../css/responsive.css">
+
+ <script src="/../js/new_jqyery.js" type="text/javascript"></script>-->
+
+
+
+        <script type="text/javascript">
+		
+			$(document).on('click','.promo-top .btn.close', function(e){
+				e.preventDefault();
+				$('.promo-top').slideUp();
+				$('.promo-minimized').removeClass('hidden');
+				setAssessmentCookie('MyAssessmentTopbanner',0);
+			});
+	
+			$(document).ready(function(){
+				setTimeout(function(){
+					$('.promo-top').slideDown().removeClass('hidden');
+				
+				}, 500);
+				
+			});
+
+			$(document).on('click','.promo-minimized i.toggle', function(e){
+				e.preventDefault();
+				$('.promo-top').slideDown().removeClass('inactive');
+				
+				
+				$('.promo-minimized').addClass('hidden').removeClass('active');
+				setAssessmentCookie('MyAssessmentTopbanner',1);
+			});
+		
+			
+			function checkAssessmentCookie(cookieName,show) {
+    
+				//console.log(user);
+				if (show == 0) {
+					//alert("Welcome again " + user);
+					setAssessmentCookie(cookieName,1);
+				} else {
+					
+					delete_cookie(cookieName);
+				}
+			}
+			
+			
+			function delete_cookie(name) {
+			  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+			}
+			
+			function setAssessmentCookie(cname, cvalue) {
+				console.log("y");
+				var d = new Date();
+				exdays=1;
+				d.setTime(d.getTime() + (exdays*24*60*60*1000));
+				var expires = "expires="+d.toUTCString();
+				document.cookie = cname + "=" + cvalue + "; "+ expires ;
+
+			 }
+			
+		</script>
+
+
+
+
+
+ 
+<script language="javascript">
+/*----------------------------------
+VALIDATING COMPANY E-MAIL ADDRESS:
+----------------------------------*/
+//$(function () {
+//  	$("#fancybox").fancybox({
+//		openEffect : 'elastic',
+//		openSpeed  : 600,
+//		closeEffect : 'elastic',
+//		closeSpeed  : 600 ,
+//		closeClick : true,
+//		'scrolling'  : 'yes',
+//		 'type' : 'inline',
+//         helpers   : { 
+//		   overlay : {closeClick: false} // prevents closing when clicking OUTSIDE fancybox 
+//  		}
+//	 });
+//})
+
+//function openVediobox( )
+//{
+//		var ifream= document.getElementById("Iframe");
+//
+//		ifream.src="https://www.youtube.com/embed/oAExWHiKaGU?rel=0&amp;wmode=Opaque";
+//		ifream.height="400px";
+//		
+//	
+//	
+//}
+
+	var selected_cat=new Array();
+	//var selected_org=new Array();
+	//var selected_Dist=new Array();
+	var distH="";
+	//function CheckUserName()
+//		{
+//			var myWin; 
+//			var un;
+//			un=document.getElementById('txtUserName').value;
+//			myWin=window.open('username.asp?uName='+un,'','dependent,width=580,height=380,top=170,left=200 ');
+//		}
+</script><script type="text/javascript">
+       
+        //function Button_check()
+//          {
+//                 var button= document.getElementById("Continue");
+//                 var message=document.getElementById("message");
+//               if(message.innerHTML="")
+//				{
+//					
+//					button.disabled=false;
+//                    button.className="btn view-btn";
+//				}
+//				else
+//				{
+//                   //alert("User Name already exist!");
+// 
+//					button.disabled=true;
+//                      
+//				}
+//           }
+	
+
+ 
+    //function ButtonClicked(field)
+//    {
+//
+//        var strength = document.getElementById("PasswordStrength_message").innerHTML;
+//
+//         
+//
+//        if (strength.indexOf("Strong") < 0)
+//
+//        {
+//            alert("Password is not strong enough!");
+//
+//            return false;
+//
+//        }
+//
+//    }
+    
+     function Check_TermsAndCondition(value)
+      {
+          
+        
+		
+			if (document.getElementById("checkCodition").checked)
+			{ 
+				document.getElementById("Continue").disabled=false;
+				document.getElementById("Continue").className="btn view-btn sign-up";
+			}
+			else
+			{
+				document.getElementById("Continue").disabled=true;
+			
+				//document.getElementById("Continue").className="BDJtabDisabled";
+			
+			}
+		
+       }
+	   function Check_TermsAndConditionbn(value)
+      {
+          
+        
+		
+			if (document.getElementById("checkCoditionbn").checked)
+			{ 
+				document.getElementById("Continuebn").disabled=false;
+				document.getElementById("Continuebn").className="btn view-btn sign-up";
+			}
+			else
+			{
+				document.getElementById("Continuebn").disabled=true;
+			
+				//document.getElementById("Continue").className="BDJtabDisabled";
+			
+			}
+		
+       }
+	    function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+         return true;
+      }
+	   
+	    $(document).ready(function() {
+			$("#global_error_message_container").hide();
+        	//$("#first_name").focus();
+		});
+	   
+   </script><script language="javascript">
+$(document).ready(function() 
+{
+	var strPassword;
+	var charPassword=0;
+	var complexity = $("#complexity");
+	var minPasswordLength = 6;
+	var maximumwordlenght=12;
+	var baseScore = 0, score = 0,feedback='';
+	
+	var num = {};
+	num.Excess = 0;
+	num.Upper = 0;
+	num.Numbers = 0;
+	num.Symbols = 0;
+
+	var bonus = {};
+	bonus.Excess = 3;
+	bonus.Upper = 4;
+	bonus.Numbers = 5;
+	bonus.Symbols = 5;
+	bonus.Combo = 0; 
+	bonus.FlatLower = 0;
+	bonus.FlatNumber = 0;
+	
+	outputResult();
+	$("#txtPassword").bind("keyup", checkVal);
+	//$('#txtEmail1').focusout(function() 
+//	{
+//		if($('#txtEmail1').val() != "")
+//		{
+//			if(!$('#userNameRadio1').is(':checked') && !$('#userNameRadio2').is(':checked')) 
+//	 		{
+//		 		CheckUserName1('email');
+//				$('input:radio[name=userNameRadio]')[0].checked = true;		
+//	 		}
+//	 
+//			
+//		}
+//		
+//    });
+//	
+//	$('#txtMobile').focusout(function() 
+//	{
+//		if($('#txtMobile').val() != "")
+//		{
+//			if(!$('#userNameRadio1').is(':checked') && !$('#userNameRadio2').is(':checked')) 
+//	 		{
+//		 		CheckUserName1('mobile');
+//				$('input:radio[name=userNameRadio]')[1].checked = true;		
+//	 		}
+//	 
+//			
+//		}
+//		
+//    });
+	
+	$('#txtEmail1').on('keyup keypress blur', function() 
+	{  
+     //if(!$('#userNameRadio1').is(':checked') && !$('#userNameRadio1').is(':checked')) 
+//	 {
+//		 
+//	 }
+//	 
+	 
+	 if($('#userNameRadio1').is(':checked'))
+	  {
+			$('#txtUserName').val('');
+			$('#txtUserName').val($(this).val());  
+	  }
+	});
+	
+	$('#txtMobile').on('keyup keypress blur', function() 
+	{  
+      
+	 if($('#userNameRadio2').is(':checked'))
+	  {
+			$('#txtUserName').val('');
+			//$('#txtUserName').val('88'+$(this).val());  //this was for previous system
+			$('#txtUserName').val($(this).val());  
+	  }
+	});
+
+
+function checkVal()
+{
+	init();
+	
+	if (charPassword.length >= minPasswordLength && charPassword.length<=maximumwordlenght )
+	{
+		baseScore = 50;	
+		analyzeString();	
+		calcComplexity();		
+	}
+	else
+	{
+		baseScore = 0;
+	}
+	
+	outputResult();
+}
+
+function init()
+{
+  strPassword= $("#txtPassword").val();
+	charPassword = strPassword.split("");
+		
+	num.Excess = 0;
+	num.Upper = 0;
+	num.Numbers = 0;
+	num.Symbols = 0;
+	bonus.Combo = 0; 
+	bonus.FlatLower = 0;
+	bonus.FlatNumber = 0;
+	baseScore = 0;
+	score =0;
+}
+
+function analyzeString ()
+{	
+	for (i=0; i<charPassword.length;i++)
+	{
+		
+		if (charPassword[i].match(/[A-Z]/g)) {num.Upper++;}
+		if (charPassword[i].match(/[0-9]/g)) {num.Numbers++;}
+		if (charPassword[i].match(/(.*[!,@,#,$,%,^,&,*,?,_,~])/)) {num.Symbols++;} 
+		
+	}
+	
+	num.Excess = charPassword.length - minPasswordLength;
+	
+	if (num.Upper  && num.Numbers && num.Symbols)
+	{
+		bonus.Combo = 25; 
+	}
+
+	else if ((num.Upper && num.Numbers)|| (num.Upper && num.Symbols) || (num.Numbers && num.Symbols))
+	{
+		bonus.Combo = 15; 
+	}
+	
+	if (strPassword.match(/^[\sa-z]+$/))
+	{ 
+		bonus.FlatLower = -15;
+	}
+	
+	if (strPassword.match(/^[\s0-9]+$/))
+	{ 
+		bonus.FlatNumber = -35;
+	}
+}
+	
+function calcComplexity()
+{
+	score = baseScore + (num.Excess*bonus.Excess) + (num.Upper*bonus.Upper) + (num.Numbers*bonus.Numbers) + (num.Symbols*bonus.Symbols) + bonus.Combo + bonus.FlatLower + bonus.FlatNumber;
+	
+}	
+
+
+function _updateProgressBar(textContent,value,cssClass,cssClass1){
+	 feedback.textContent =textContent;
+	progress=document.getElementById("progressbar");
+	//progress.style.width= value+"px";
+	feedback.className=cssClass1;
+	progress.className=cssClass;
+	show_error_message(textContent,"PasswordStrength");
+	 
+  }
+	
+function outputResult()
+{
+	if (document.getElementById("PasswordStrength_message")!=null)
+	
+	{
+
+		feedback = document.getElementById("PasswordStrength_message");
+		
+		if ($("#txtPassword").val()== "")
+		{ 
+			complexity.html("Enter a random value").removeClass("weak strong stronger strongest").addClass("default");
+			_updateProgressBar("",0,"","msg");
+		}
+		else if (charPassword.length < minPasswordLength)
+		{
+			
+			complexity.html("At least " + minPasswordLength+ " characters please!").removeClass("strong stronger strongest").addClass("weak");
+			_updateProgressBar("Very Weak!",5,"progress-bar very-week-p","very-week msg");
+		}
+		
+		else if (score<50)
+		{
+			
+			complexity.html("Weak!").removeClass("strong stronger strongest").addClass("weak");
+			//document.getElementById("password_strength").className = "strength" + score;
+		   _updateProgressBar("Weak!",score,"progress-bar week-p","very-week msg");
+		}
+		else if (score>=50 && score<70)
+		{
+			complexity.html("Average!").removeClass("stronger strongest").addClass("strong");
+			_updateProgressBar("Weak!",score,"progress-bar week-p","week msg");
+		}
+		else if (score>=70 && score<100)
+		{
+			complexity.html("Strong!").removeClass("strongest").addClass("stronger");
+				_updateProgressBar("Strong!",score,"progress-bar strong-p","strong msg");
+		}
+		else if (score>=100)
+		{
+			
+			complexity.html("Secure!").addClass("strongest");
+			_updateProgressBar("Very Strong!",score,"progress-bar very-strong-p","very-strong msg");
+			
+		}
+		else if (charPassword.length < maximumwordlenght )
+		{
+			complexity.html("Password limite should  be " + maximumwordlenght+ " characters please!").removeClass("strong stronger strongest").addClass("weak");
+		}
+	}
+
+	
+}
+
+}
+);
+
+function LoadForm(inputValue)
+{
+	var categoryType = inputValue;
+	var isFromSm = document.getElementById("hIsSMLogin").value;
+	var x = document.getElementById("userInfo");
+	
+	if(inputValue == 2) //this //condition used when there was a radio button 
+	{
+		isFromSm = "true";
+	}
+	
+	//if (isFromSm=="false")
+	//{
+		if(categoryType == 1)
+		{
+			x.style.display = "none";
+			document.getElementById("uIDBtn").style.display = "none"
+			document.getElementById("emailDiv").style.display = "none";
+			document.getElementById("categoryType").value = 1;
+			document.getElementById("functionRadio").value = 1;
+			document.getElementById("termAndCondition").style.display = "none";
+			
+		}else
+		{
+			
+			
+			if (isFromSm =="false")
+			{
+					if(document.getElementById("emailDiv").style.display == "none")
+					{
+						document.getElementById("emailDiv").style.display = "block";
+					}
+					x.style.display = "block";
+					document.getElementById("uIDBtn").style.display = "block"
+					document.getElementById("emailuIDBtn").style.display = "block"
+					
+	
+			}else
+			{
+					x.style.display = "none";
+					document.getElementById("uIDBtn").style.display = "none"
+					document.getElementById("emailDiv").style.display = "block";
+			}
+			document.getElementById("categoryType").value = 0;
+			document.getElementById("functionRadio").value = 0;
+			document.getElementById("termAndCondition").style.display = "block";
+		}
+		
+	//}else
+	//{
+	//	if(document.getElementById("emailDiv").style.display == "none")
+	//	{
+	//		document.getElementById("emailDiv").style.display = "block";
+	//		//document.getElementById("categoryType").value = 0;
+	//	}
+	//	x.style.display = "none";
+	//	document.getElementById("uIDBtn").style.display = "none"
+	//	document.getElementById("emailuIDBtn").style.display = "none"
+		//if (categoryType != 2)
+//		{
+//			if(categoryType == 1)
+//			{
+//				document.getElementById("categoryType").value = 1;
+//				document.getElementById("functionRadio").value = 1;
+//			}else
+//			{
+//				document.getElementById("categoryType").value = 0;
+//				document.getElementById("functionRadio").value = 0;
+//			}
+//		}
+		//if(document.getElementById("categoryType").value == 1)
+//		{
+//			document.getElementById("termAndCondition").style.display = "none";
+//		}
+//		else
+//		{
+//			document.getElementById("termAndCondition").style.display = "block";
+//		}
+//	}
+	
+	  $('.msg').hide('medium');
+}
+
+function formVersion(inputValue)
+{
+	if(inputValue == 1 )
+	{
+		    document.getElementById("txtFirstName").placeholder = "আপনার নাম";
+			document.getElementById("name").innerHTML = "নাম";
+			document.getElementById("category").innerHTML = "নিচের লিস্ট থেকে দক্ষতা নির্বাচন করুন";
+			document.getElementById("mbl").innerHTML = "মোবাইল নম্বর";
+			//document.getElementById("txtLastFName").placeholder = "নামের শেষ অংশ";
+			document.getElementById("txtMobile").placeholder = "0171XXXXXX";
+			document.getElementById("txtEmail1").placeholder = "ইমেইল অ্যাড্রেস";
+			document.getElementById("male").innerHTML = "পুরুষ";
+			document.getElementById("female").innerHTML = "মহিলা";
+			document.getElementById("other").innerHTML = "অন্যান্য";
+			document.getElementById("gender").innerHTML = "লিঙ্গ"; 
+			//document.getElementById("term").innerHTML = "আমি বিডিজবস.কম এর প্রদত্ত শর্তাবলীতে সম্মত আছি। <a href='http://www.bdjobs.com/tos.asp'>&nbsp;শর্তাবলী</a>"; 
+			//document.getElementById("subscribe").innerHTML = "বিডিজবস এর  নিউজলেটার এ সাবস্ক্রাইব করুন।"; 
+			document.getElementById("Continue").innerHTML = "অ্যাকাউন্ট তৈরি"; 
+			//document.getElementById("login_link").innerHTML = "আপনি কি ইতিমধ্যেই বিডিজবস এর একজন ইউজার হয়েছেন?<a href='http://mybdjobs.bdjobs.com/bn/mybdjobs/default.asp'>সাইন ইন</a>"
+			document.getElementById("version").value = "BN"
+			
+			 $('#txtFirstName').addClass( 'name-msg' );
+			 $('#txtLastFName').addClass( 'lname-msg' );
+			 $('#txtMobile').addClass( 'phoem-msg' );
+			
+			 
+			
+			
+	}
+	else
+	{		
+			document.getElementById("txtFirstName").placeholder = "Your Name";
+			document.getElementById("name").innerHTML = "Name";
+			document.getElementById("category").innerHTML = "Select your skill from following list";
+			document.getElementById("mbl").innerHTML = "Mobile Number";
+			//document.getElementById("txtLastFName").placeholder = "Last Name";
+			document.getElementById("txtMobile").placeholder = "0171XXXXXX";
+			document.getElementById("txtEmail1").placeholder = "Email Address";
+			document.getElementById("male").innerHTML = "Male";
+			document.getElementById("female").innerHTML = "Female";
+			document.getElementById("other").innerHTML = "Others";
+			document.getElementById("gender").innerHTML = "Gender";
+			//document.getElementById("term").innerHTML = "I agree to the Bdjobs.com <a href='http://www.bdjobs.com/tos.asp'>Terms of use</a>."; 
+			//document.getElementById("subscribe").innerHTML = "Subscribe to Bdjobs Newsletter."; 
+			document.getElementById("Continue").innerHTML = "Create Account"; 
+			//document.getElementById("login_link").innerHTML = "Already a Bdjobs Member? <a href='http://mybdjobs.bdjobs.com/mybdjobs/default.asp'>Sign In</a>";
+			document.getElementById("version").value = "EN";
+			
+			 $('#txtFirstName').removeClass( 'name-msg' );
+			 $('#txtLastFName').removeClass( 'lname-msg' );
+			 $('#txtMobile').removeClass( 'phoem-msg' );
+			 
+	}
+}
+
+
+function setUserName(userName)
+{
+	var strUserName = userName
+	var email = document.getElementById("txtEmail1");
+	var mobile = document.getElementById("txtMobile");
+	var countryCode = document.getElementById("txtCountryCode");
+	var x = document.getElementById("txtUserName");
+	if( strUserName == "email")
+	{
+		if (email.value.trim() == "")
+		{
+			alert("Email Address cannot be empty.");
+			document.getElementById("userNameRadio1").checked = false;
+			document.getElementById("txtUserName").value = "";
+			return false;
+		}else
+		{
+		     CheckUserName1(userName);
+			 x.value = email.value.trim() ;
+		}
+	}else
+	{
+		 if (mobile.value.trim() == "")
+			{
+				alert("Mobile Number cannot be empty.");
+				document.getElementById("userNameRadio2").checked = false;
+				document.getElementById("txtUserName").value = "";
+				return false;
+			}else
+			{
+			 	 CheckUserName1(userName);
+				//x.value = countryCode.value.trim() + mobile.value.trim() ; this was for previous system
+				x.value =  mobile.value.trim() ;
+			}
+	}
+	x.disabled = false;
+}
+//function keyUpUserID()
+//{
+//	var isFunctional = document.getElementById("functionRadio").checked;
+//	var isFromSm = document.getElementById("hIsSMLogin").value;
+//	if(isFunctional == true && isFromSm == false)
+//	{
+//	}
+//}
+
+
+
+</script><script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56024242-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+//
+//	  var _gaq = _gaq || [];
+//	  _gaq.push(['_setAccount', 'UA-36961160-1']);
+//	  _gaq.push(['_trackPageview']);
+//	
+//	  (function() {
+//		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//	  })();
+//	
+	</script><script>
+		(function(h,e,a,t,m,p) {
+		m=e.createElement(a);m.async=!0;m.src=t;
+		p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+		})(window,document,'script','https://u.heatmap.it/log.js');
+	</script><script src="./Create Account_files/userspace"></script><script type="text/javascript" src="./Create Account_files/framework"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}.fb_shrink_active{opacity:1;transform:scale(1, 1);transition-duration:200ms;transition-timing-function:ease-out}.fb_shrink_active:active{opacity:.5;transform:scale(.75, .75)}</style></head>
+
+
+	
+      
+
+    
+   
+   
+
+
+
+
+
+	
+	
+
+
+<body>
+
+
+
+
+<noscript>
+	&lt;style&gt;
+.c1{
+	position:fixed;
+	background-color:#AE0000;
+	text-align:center;
+	width:100%;
+	height:21px;
+	color:#FFF;
+	font-size:13px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	top:0;
+	padding-top:3px;
+	margin-top:6px;
+	z-index: 101;
+	}
+ &lt;/style&gt;
+ &lt;noscript&gt;
+&lt;div class="c1"&gt;
+
+This site works best with Javascript enabled. Your browser's Javascript is disabled.To enable &lt;a href="EnablingJSTbl.asp" target="_blank" style="color:#0FF;"&gt;click here&lt;/a&gt;
+
+&lt;/div&gt;
+</noscript>
+
+
+    
+
+
+
+
+
+
+<script language="javascript">
+  var functionalCategoryList="<option value='-1' Selected>Select</option><option value='1'>Accounting/Finance</option><option value='2'>Bank/Non-Bank Fin. Institution</option><option value='3'>Commercial/Supply Chain</option><option value='4'>Education/Training</option><option value='5'>Engineer/Architect</option><option value='6'>Garments/Textile</option><option value='7'>General Management/Admin</option><option value='8'>IT/Telecommunication</option><option value='9'>Marketing/Sales</option><option value='10'>Media/Advertisement/Event Mgt.</option><option value='11'>Medical/Pharma</option><option value='12'>NGO/Development</option><option value='13'>Research/Consultancy</option><option value='14'>Secretary/Receptionist</option><option value='15'>Data Entry/Operator/BPO</option><option value='16'>Customer Support/Call Centre</option><option value='17'>HR/Org. Development</option><option value='18'>Design/Creative</option><option value='19'>Production/Operation</option><option value='20'>Hospitality/ Travel/ Tourism</option><option value='21'>Beauty Care/ Health & Fitness</option><option value='22'>Law/Legal</option><option value='23'>Electrician/ Construction/ Repair</option><option value='24'>Security/Support Service</option><option value='25'>Driving/Motor Technician</option><option value='26'>Agro (Plant/Animal/Fisheries)</option>";
+  var skillList="<option value='-1' Selected>নির্বাচন</option><option value='76'>CAD অপারেটর</option><option value='68'>শেফ/বাবুর্চী</option><option value='80'>ক্লিনার</option><option value='61'>ডাটা এন্ট্রি/ কম্পিউটার অপারেটর</option><option value='77'>ডেলিভারী ম্যান</option><option value='67'>ড্রাইভার</option><option value='66'>ইলেকট্রিশিয়ান/ইলেকট্রনিকস্ টেকনিশিয়ান</option><option value='81'>মালী</option><option value='78'>গার্মেন্টস টেকনিশিয়ান / মেশিন অপারেটর</option><option value='71'>গ্রাফিক ডিজাইনার</option><option value='69'>হাউজকিপার</option><option value='75'>রাজমিস্ত্রি/ নির্মান কর্মী</option><option value='62'>মেকানিক/ টেকনিশিয়ান</option><option value='63'>নার্স</option><option value='65'>প্যাথলজিষ্ট/ল্যাব সহকারী</option><option value='79'>পিয়ন</option><option value='73'>প্লাম্বার/পাইপফিটিং</option><option value='70'>সিকিউরিটি গার্ড</option><option value='74'>স্যুইং মেশিন অপারেটর</option><option value='64'>পরিচারক/ পরিচারিকা</option><option value='72'>ওয়েল্ডার</option>"; 
+  
+  var countryListEN="<option value='-1'>Select</option><option value='93'>Afghanistan (93)</option><option value='355'>Albania (355)</option><option value='213'>Algeria (213)</option><option value='376'>Andorra (376)</option><option value='244'>Angola (244)</option><option value='264'>Anguilla (264)</option><option value='672'>Antarctica (672)</option><option value='268'>Antigua (268)</option><option value='54'>Argentina (54)</option><option value='374'>Armenia (374)</option><option value='297'>Aruba (297)</option><option value='61'>Australia (61)</option><option value='43'>Austria (43)</option><option value='994'>Azerbaijan (994)</option><option value='242'>Bahamas (242)</option><option value='973'>Bahrain (973)</option><option value='88' Selected>Bangladesh (88)</option><option value='246'>Barbados (246)</option><option value='375'>Belarus (375)</option><option value='32'>Belgium (32)</option><option value='501'>Belize (501)</option><option value='229'>Benin (229)</option><option value='441'>Bermuda (441)</option><option value='975'>Bhutan (975)</option><option value='591'>Bolivia (591)</option><option value='387'>Bosnia and Herzegovina (387)</option><option value='267'>Botswana (267)</option><option value='55'>Brazil (55)</option><option value='284'>British Virgin Islands (284)</option><option value='673'>Brunei (673)</option><option value='359'>Bulgaria (359)</option><option value='226'>Burkina Faso (226)</option><option value='257'>Burundi (257)</option><option value='855'>Cambodia (855)</option><option value='237'>Cameroon (237)</option><option value='1'>Canada (1)</option><option value='238'>Cape Verde (238)</option><option value='236'>Central African Republic (236)</option><option value='235'>Chad (235)</option><option value='56'>Chile (56)</option><option value='86'>China (86)</option><option value='57'>Colombia (57)</option><option value='269'>Comoros (269)</option><option value='242'>Congo (242)</option><option value='243'>Congo (Zaire) (243)</option><option value='682'>Cook Islands (682)</option><option value='506'>Costa Rica (506)</option><option value='225'>Cote d'Ivoire (Ivory Coast) (225)</option><option value='385'>Croatia (385)</option><option value='53'>Cuba (53)</option><option value='357'>Cyprus (357)</option><option value='420'>Czech Republic (420)</option><option value='45'>Denmark (45)</option><option value='253'>Djibouti (253)</option><option value='767'>Dominica (767)</option><option value='809'>Dominican Republic (809)</option><option value='670'>East Timor (670)</option><option value='593'>Ecuador (593)</option><option value='20'>Egypt (20)</option><option value='503'>El Salvador (503)</option><option value='240'>Equatorial Guinea (240)</option><option value='291'>Eritrea (291)</option><option value='372'>Estonia (372)</option><option value='251'>Ethiopia (251)</option><option value='500'>Falkland Islands (500)</option><option value='691'>Federated States of Micronesia (691)</option><option value='679'>Fiji (679)</option><option value='358'>Finland (358)</option><option value='33'>France (33)</option><option value='594'>French Guiana (594)</option><option value='689'>French Polynesia (689)</option><option value='241'>Gabon (241)</option><option value='995'>Georgia (995)</option><option value='49'>Germany (49)</option><option value='233'>Ghana (233)</option><option value='350'>Gibraltar (350)</option><option value='30'>Greece (30)</option><option value='299'>Greenland (299)</option><option value='473'>Grenada (473)</option><option value='590'>Guadeloupe (590)</option><option value='502'>Guatemala (502)</option><option value='224'>Guinea (224)</option><option value='245'>Guinea-Bissau (245)</option><option value='592'>Guyana (592)</option><option value='509'>Haiti (509)</option><option value='504'>Honduras (504)</option><option value='852'>Hong Kong (852)</option><option value='36'>Hungary (36)</option><option value='354'>Iceland (354)</option><option value='91'>India (91)</option><option value='62'>Indonesia (62)</option><option value='98'>Iran (98)</option><option value='964'>Iraq (964)</option><option value='353'>Ireland (353)</option><option value='972'>Israel (972)</option><option value='39'>Italy (39)</option><option value='876'>Jamaica (876)</option><option value='81'>Japan (81)</option><option value='962'>Jordan (962)</option><option value='7'>Kazakhstan (7)</option><option value='254'>Kenya (254)</option><option value='686'>Kiribati (686)</option><option value='965'>Kuwait (965)</option><option value='996'>Kyrgyzstan (996)</option><option value='856'>Laos (856)</option><option value='371'>Latvia (371)</option><option value='961'>Lebanon (961)</option><option value='266'>Lesotho (266)</option><option value='231'>Liberia (231)</option><option value='218'>Libya (218)</option><option value='423'>Liechtenstein (423)</option><option value='370'>Lithuania (370)</option><option value='352'>Luxembourg (352)</option><option value='853'>Macau (853)</option><option value='389'>Macedonia (389)</option><option value='261'>Madagascar (261)</option><option value='265'>Malawi (265)</option><option value='60'>Malaysia (60)</option><option value='960'>Maldives (960)</option><option value='223'>Mali (223)</option><option value='356'>Malta (356)</option><option value='692'>Marshall Islands (692)</option><option value='596'>Martinique (596)</option><option value='222'>Mauritania (222)</option><option value='230'>Mauritius (230)</option><option value='262'>Mayotte (262)</option><option value='52'>Mexico (52)</option><option value='373'>Moldova (373)</option><option value='377'>Monaco (377)</option><option value='976'>Mongolia (976)</option><option value='382'>Montenegro (382)</option><option value='664'>Montserrat (664)</option><option value='212'>Morocco (212)</option><option value='258'>Mozambique (258)</option><option value='95'>Myanmar (95)</option><option value='264'>Namibia (264)</option><option value='674'>Nauru (674)</option><option value='977'>Nepal (977)</option><option value='31'>Netherlands (31)</option><option value='599'>Netherlands Antilles (599)</option><option value='687'>New Caledonia (687)</option><option value='64'>New Zealand (64)</option><option value='505'>Nicaragua (505)</option><option value='227'>Niger (227)</option><option value='234'>Nigeria (234)</option><option value='850'>North Korea (850)</option><option value='47'>Norway (47)</option><option value='968'>Oman (968)</option><option value='92'>Pakistan (92)</option><option value='680'>Palau (680)</option><option value='507'>Panama (507)</option><option value='675'>Papua New Guinea (675)</option><option value='595'>Paraguay (595)</option><option value='51'>Peru (51)</option><option value='63'>Philippines (63)</option><option value='48'>Poland (48)</option><option value='351'>Portugal (351)</option><option value='974'>Qatar (974)</option><option value='40'>Romania (40)</option><option value='7'>Russia (7)</option><option value='250'>Rwanda (250)</option><option value='869'>Saint Kitts and Nevis (869)</option><option value='758'>Saint Lucia (758)</option><option value='508'>Saint Pierre and Miquelon (508)</option><option value='784'>Saint Vincent and the Grenadines (784)</option><option value='685'>Samoa (685)</option><option value='378'>San Marino (378)</option><option value='239'>Sao Tome and Principe (239)</option><option value='966'>Saudi Arabia (966)</option><option value='221'>Senegal (221)</option><option value='381'>Serbia (381)</option><option value='248'>Seychelles (248)</option><option value='232'>Sierra Leone (232)</option><option value='65'>Singapore (65)</option><option value='421'>Slovakia (421)</option><option value='386'>Slovenia (386)</option><option value='677'>Solomon Islands (677)</option><option value='252'>Somalia (252)</option><option value='27'>South Africa (27)</option><option value='82'>South Korea (82)</option><option value='2011'>South Sudan (2011)</option><option value='34'>Spain (34)</option><option value='94'>Sri Lanka (94)</option><option value='249'>Sudan (249)</option><option value='597'>Suriname (597)</option><option value='268'>Swaziland (268)</option><option value='46'>Sweden (46)</option><option value='41'>Switzerland (41)</option><option value='963'>Syria (963)</option><option value='886'>Taiwan (886)</option><option value='992'>Tajikistan (992)</option><option value='255'>Tanzania (255)</option><option value='66'>Thailand (66)</option><option value='220'>The Gambia (220)</option><option value='228'>Togo (228)</option><option value='676'>Tonga (676)</option><option value='868'>Trinidad and Tobago (868)</option><option value='216'>Tunisia (216)</option><option value='90'>Turkey (90)</option><option value='993'>Turkmenistan (993)</option><option value='649'>Turks and Caicos Islands (649)</option><option value='688'>Tuvalu (688)</option><option value='256'>Uganda (256)</option><option value='380'>Ukraine (380)</option><option value='971'>United Arab Emirates (971)</option><option value='44'>United Kingdom (44)</option><option value='1'>United States (1)</option><option value='598'>Uruguay (598)</option><option value='998'>Uzbekistan (998)</option><option value='678'>Vanuatu (678)</option><option value='58'>Venezuela (58)</option><option value='84'>Vietnam (84)</option><option value='967'>Yemen (967)</option><option value='260'>Zambia (260)</option><option value='263'>Zimbabwe (263)</option>";
+  var countryListBN="<option value='-1'>নির্বাচন</option><option value='93'>Afghanistan (93)</option><option value='355'>Albania (355)</option><option value='213'>Algeria (213)</option><option value='376'>Andorra (376)</option><option value='244'>Angola (244)</option><option value='264'>Anguilla (264)</option><option value='672'>Antarctica (672)</option><option value='268'>Antigua (268)</option><option value='54'>Argentina (54)</option><option value='374'>Armenia (374)</option><option value='297'>Aruba (297)</option><option value='61'>Australia (61)</option><option value='43'>Austria (43)</option><option value='994'>Azerbaijan (994)</option><option value='242'>Bahamas (242)</option><option value='973'>Bahrain (973)</option><option value='88' Selected>Bangladesh (88)</option><option value='246'>Barbados (246)</option><option value='375'>Belarus (375)</option><option value='32'>Belgium (32)</option><option value='501'>Belize (501)</option><option value='229'>Benin (229)</option><option value='441'>Bermuda (441)</option><option value='975'>Bhutan (975)</option><option value='591'>Bolivia (591)</option><option value='387'>Bosnia and Herzegovina (387)</option><option value='267'>Botswana (267)</option><option value='55'>Brazil (55)</option><option value='284'>British Virgin Islands (284)</option><option value='673'>Brunei (673)</option><option value='359'>Bulgaria (359)</option><option value='226'>Burkina Faso (226)</option><option value='257'>Burundi (257)</option><option value='855'>Cambodia (855)</option><option value='237'>Cameroon (237)</option><option value='1'>Canada (1)</option><option value='238'>Cape Verde (238)</option><option value='236'>Central African Republic (236)</option><option value='235'>Chad (235)</option><option value='56'>Chile (56)</option><option value='86'>China (86)</option><option value='57'>Colombia (57)</option><option value='269'>Comoros (269)</option><option value='242'>Congo (242)</option><option value='243'>Congo (Zaire) (243)</option><option value='682'>Cook Islands (682)</option><option value='506'>Costa Rica (506)</option><option value='225'>Cote d'Ivoire (Ivory Coast) (225)</option><option value='385'>Croatia (385)</option><option value='53'>Cuba (53)</option><option value='357'>Cyprus (357)</option><option value='420'>Czech Republic (420)</option><option value='45'>Denmark (45)</option><option value='253'>Djibouti (253)</option><option value='767'>Dominica (767)</option><option value='809'>Dominican Republic (809)</option><option value='670'>East Timor (670)</option><option value='593'>Ecuador (593)</option><option value='20'>Egypt (20)</option><option value='503'>El Salvador (503)</option><option value='240'>Equatorial Guinea (240)</option><option value='291'>Eritrea (291)</option><option value='372'>Estonia (372)</option><option value='251'>Ethiopia (251)</option><option value='500'>Falkland Islands (500)</option><option value='691'>Federated States of Micronesia (691)</option><option value='679'>Fiji (679)</option><option value='358'>Finland (358)</option><option value='33'>France (33)</option><option value='594'>French Guiana (594)</option><option value='689'>French Polynesia (689)</option><option value='241'>Gabon (241)</option><option value='995'>Georgia (995)</option><option value='49'>Germany (49)</option><option value='233'>Ghana (233)</option><option value='350'>Gibraltar (350)</option><option value='30'>Greece (30)</option><option value='299'>Greenland (299)</option><option value='473'>Grenada (473)</option><option value='590'>Guadeloupe (590)</option><option value='502'>Guatemala (502)</option><option value='224'>Guinea (224)</option><option value='245'>Guinea-Bissau (245)</option><option value='592'>Guyana (592)</option><option value='509'>Haiti (509)</option><option value='504'>Honduras (504)</option><option value='852'>Hong Kong (852)</option><option value='36'>Hungary (36)</option><option value='354'>Iceland (354)</option><option value='91'>India (91)</option><option value='62'>Indonesia (62)</option><option value='98'>Iran (98)</option><option value='964'>Iraq (964)</option><option value='353'>Ireland (353)</option><option value='972'>Israel (972)</option><option value='39'>Italy (39)</option><option value='876'>Jamaica (876)</option><option value='81'>Japan (81)</option><option value='962'>Jordan (962)</option><option value='7'>Kazakhstan (7)</option><option value='254'>Kenya (254)</option><option value='686'>Kiribati (686)</option><option value='965'>Kuwait (965)</option><option value='996'>Kyrgyzstan (996)</option><option value='856'>Laos (856)</option><option value='371'>Latvia (371)</option><option value='961'>Lebanon (961)</option><option value='266'>Lesotho (266)</option><option value='231'>Liberia (231)</option><option value='218'>Libya (218)</option><option value='423'>Liechtenstein (423)</option><option value='370'>Lithuania (370)</option><option value='352'>Luxembourg (352)</option><option value='853'>Macau (853)</option><option value='389'>Macedonia (389)</option><option value='261'>Madagascar (261)</option><option value='265'>Malawi (265)</option><option value='60'>Malaysia (60)</option><option value='960'>Maldives (960)</option><option value='223'>Mali (223)</option><option value='356'>Malta (356)</option><option value='692'>Marshall Islands (692)</option><option value='596'>Martinique (596)</option><option value='222'>Mauritania (222)</option><option value='230'>Mauritius (230)</option><option value='262'>Mayotte (262)</option><option value='52'>Mexico (52)</option><option value='373'>Moldova (373)</option><option value='377'>Monaco (377)</option><option value='976'>Mongolia (976)</option><option value='382'>Montenegro (382)</option><option value='664'>Montserrat (664)</option><option value='212'>Morocco (212)</option><option value='258'>Mozambique (258)</option><option value='95'>Myanmar (95)</option><option value='264'>Namibia (264)</option><option value='674'>Nauru (674)</option><option value='977'>Nepal (977)</option><option value='31'>Netherlands (31)</option><option value='599'>Netherlands Antilles (599)</option><option value='687'>New Caledonia (687)</option><option value='64'>New Zealand (64)</option><option value='505'>Nicaragua (505)</option><option value='227'>Niger (227)</option><option value='234'>Nigeria (234)</option><option value='850'>North Korea (850)</option><option value='47'>Norway (47)</option><option value='968'>Oman (968)</option><option value='92'>Pakistan (92)</option><option value='680'>Palau (680)</option><option value='507'>Panama (507)</option><option value='675'>Papua New Guinea (675)</option><option value='595'>Paraguay (595)</option><option value='51'>Peru (51)</option><option value='63'>Philippines (63)</option><option value='48'>Poland (48)</option><option value='351'>Portugal (351)</option><option value='974'>Qatar (974)</option><option value='40'>Romania (40)</option><option value='7'>Russia (7)</option><option value='250'>Rwanda (250)</option><option value='869'>Saint Kitts and Nevis (869)</option><option value='758'>Saint Lucia (758)</option><option value='508'>Saint Pierre and Miquelon (508)</option><option value='784'>Saint Vincent and the Grenadines (784)</option><option value='685'>Samoa (685)</option><option value='378'>San Marino (378)</option><option value='239'>Sao Tome and Principe (239)</option><option value='966'>Saudi Arabia (966)</option><option value='221'>Senegal (221)</option><option value='381'>Serbia (381)</option><option value='248'>Seychelles (248)</option><option value='232'>Sierra Leone (232)</option><option value='65'>Singapore (65)</option><option value='421'>Slovakia (421)</option><option value='386'>Slovenia (386)</option><option value='677'>Solomon Islands (677)</option><option value='252'>Somalia (252)</option><option value='27'>South Africa (27)</option><option value='82'>South Korea (82)</option><option value='2011'>South Sudan (2011)</option><option value='34'>Spain (34)</option><option value='94'>Sri Lanka (94)</option><option value='249'>Sudan (249)</option><option value='597'>Suriname (597)</option><option value='268'>Swaziland (268)</option><option value='46'>Sweden (46)</option><option value='41'>Switzerland (41)</option><option value='963'>Syria (963)</option><option value='886'>Taiwan (886)</option><option value='992'>Tajikistan (992)</option><option value='255'>Tanzania (255)</option><option value='66'>Thailand (66)</option><option value='220'>The Gambia (220)</option><option value='228'>Togo (228)</option><option value='676'>Tonga (676)</option><option value='868'>Trinidad and Tobago (868)</option><option value='216'>Tunisia (216)</option><option value='90'>Turkey (90)</option><option value='993'>Turkmenistan (993)</option><option value='649'>Turks and Caicos Islands (649)</option><option value='688'>Tuvalu (688)</option><option value='256'>Uganda (256)</option><option value='380'>Ukraine (380)</option><option value='971'>United Arab Emirates (971)</option><option value='44'>United Kingdom (44)</option><option value='1'>United States (1)</option><option value='598'>Uruguay (598)</option><option value='998'>Uzbekistan (998)</option><option value='678'>Vanuatu (678)</option><option value='58'>Venezuela (58)</option><option value='84'>Vietnam (84)</option><option value='967'>Yemen (967)</option><option value='260'>Zambia (260)</option><option value='263'>Zimbabwe (263)</option>"; 
+ 
+  function LoadLocations(intOption)
+	{
+	var strHtml = "";
+	document.getElementById("spnCategory").innerHTML = "";
+	//strHtml += "<table ><tr><td>" ;
+	strHtml += "<select name='selected_Cat' id='selected_Cat'  class='form-control from-control-login'>"
+	if (intOption == "0")
+	{	strHtml = strHtml + functionalCategoryList;}
+	else
+	{	strHtml = strHtml + skillList;
+	    strHtml = strHtml + "<option value='-11'>অন্যান্য স্পেশাল স্কিল্‌ড জব্‌স</option>";
+	}
+		
+	strHtml = strHtml + "</select>";
+	document.getElementById("spnCategory").innerHTML = strHtml;
+	}
+	
+	function LoadCountry(intOption)
+	{
+	var strHtml = "";
+	document.getElementById("country").innerHTML = "";
+	//strHtml += "<table ><tr><td>" ;
+	strHtml += "<select name='txtCountryCode' id='txtCountryCode' required='required' class='form-control from-control-login'>"
+	if (intOption == "EN")
+	{	strHtml = strHtml + countryListEN;}
+	else
+	{	strHtml = strHtml + countryListBN;
+	    strHtml = strHtml + "<option value='-11'>অন্যান্য</option>";
+	}
+		
+	strHtml = strHtml + "</select>";
+	document.getElementById("country").innerHTML = strHtml;
+	}
+</script>
+
+
+    	<div class="promo-top" style="display: block;">
+            <div class="container">   
+                <div class="inner">                                                                                                		
+
+                    <a href="http://mybdjobs.bdjobs.com/mybdjobs/assessment/smnt_certification_help.asp" target="_blank" onclick="ga(&#39;send&#39;,&#39;event&#39;, &#39;assessmentTopBanner&#39;,&#39;click&#39;,&#39;createaccount.asp&#39;,1);">
+                        <img src="./Create Account_files/assessment_promo_bg_2.png" alt="">
+                    </a>
+                    <a href="javascript:checkAssessmentCookie(&#39;MyAssessmentTopbanner&#39;,0);" class="btn close">
+                        <i class="icon-times-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="promo-minimized  hidden">
+            <a href="javascript:checkAssessmentCookie(&#39;MyAssessmentTopbanner&#39;,1);">
+                <i class="icon-angle-down toggle"></i>
+            </a>
+        </div>
+        
+        
+        
+        
+
+<div class="topBar hidden-sm hidden-xs">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <ul class="pull-left brands">
+                     <li><a href="http://jobs.bdjobs.com/jobsearch.asp" class="jobs" target="_blank">Jobs</a></li>
+                     <li><a href="javascript:void();" class="mybdjobs active">My Bdjobs</a></li>
+                     <li><a href="http://bdjobstraining.com/" class="training" target="_blank">Training</a></li>
+                     <li><a href="http://corporate3.bdjobs.com/" class="corporate" target="_blank">Employers</a></li>
+                  </ul>
+                  <div class="topBar-right pull-right">
+                     <ul class="pull-left icons">
+                        <li><a href="https://www.facebook.com/mybdjobs" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://plus.google.com/+BdjobscomLtdDhaka" target="_blank"><i class="icon-google-plus"></i></a></li>
+                        <li><a href="https://www.youtube.com/mybdjobs" target="_blank"><i class="icon-youtube"></i></a></li>
+                        <li><a href="http://www.bdjobs.com/contact.asp" target="_blank"><i class="icon-phone"></i></a></li>
+                     </ul>
+                     
+                      <div class="btn-group lang-btn" role="group" aria-label="...">
+                        <a href="javascript:void();" class="btn bn active">ENG</a>
+                        <a href="http://mybdjobs.bdjobs.com/bn/createaccountbn.asp?q=A" class="btn bn"><i class="icon-bn"></i></a>
+                     </div>
+                     
+                    <!-- <div class="btn-group lang-btn" role="group" aria-label="...">
+                        <a href="" class="btn bn active"><i class="icon-bn"></i></a>
+                        <button type="button" class="btn">ENG</button>
+                     </div>-->
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+<!--pagename: http://mybdjobs.bdjobs.com/bn/createaccountbn.asp?q=A--><!--awewaeFalse-->
+<div class="notifications top-left"></div>
+<div class="header">
+
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <nav class="navbar navbar-default">
+                  
+                     <div class="logo">
+                        <a href="http://www.bdjobs.com/"><img class="img-responsive" src="./Create Account_files/logo.png" alt="Logo" title="bdjobs.com logo"></a>
+                     </div>
+
+                     <!-- START MOBILE ONLY NOTIFICATION BELL AND FLY MENU -->
+                     <div class="mobile-menu-right hidden-lg hidden-md">
+                        <ul>
+                          <li class="fly-menu">
+                            <a href="javascript:void();" class="fly-opener active navbar-toggle">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </a>
+                            <a href="javascript:void();" class="fly-closer not-active">
+                              ×
+                            </a>
+                        </li>
+                        </ul>
+                     </div>
+                     <!-- END MOBILE ONLY NOTIFICATION BELL AND FLY MENU -->
+					
+                     
+
+                     <div class="collapse navbar-menu navbar-header navbar-collapse">
+                        <ul class="nav navbar-nav">
+                           <li>
+                              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quick Links <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="http://jobs.bdjobs.com/OtherJobs.asp?JobType=new">New Jobs</a></li>
+                                 <li><a href="http://jobs.bdjobs.com/OtherJobs.asp?JobType=deadline">Deadline Tomorrow</a></li>
+                                 <li><a href="http://jobs.bdjobs.com/OtherJobs.asp?JobType=parttime">Part Time</a></li>
+                                 <li><a href="http://jobs.bdjobs.com/OtherJobs.asp?JobType=contract">Contractual</a></li>
+                                 <li><a href="http://jobs.bdjobs.com/OtherJobs.asp?JobType=government">Government</a></li>
+                                 <li><a href="http://jobs.bdjobs.com/locationwisejobs.asp">Location Wise</a></li>
+                                 <li><a href="http://jobs.bdjobs.com/locationwisejobs.asp?jobtype=overseas">Overseas</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="http://jobs.bdjobs.com/Company_list.asp">Employer List</a></li>
+                           <li><a href="http://www.bdjobs.com/career/counsel.asp" target="_blank">Career Resources</a></li>
+                           <li><a href="http://mybdjobs.bdjobs.com/mybdjobs/faq.asp" target="_blank">FAQ</a></li>
+                         
+                          <li class="switch-bn hidden-md hidden-lg"><a href="http://mybdjobs.bdjobs.com/bn/createaccountbn.asp?q=A">বাংলাতে দেখুন</a></li>
+							
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+    
+
+                  <!--- START MENU NEV AREA-->
+     <div class="form-area">
+            <div class="form-area registration-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="left-form">
+                            
+                                <div class="reg-form">
+                                	<div class="mob-cart">
+                                    	
+                                        <h2>
+                                          Create your free Bdjobs account now (অ্যাকাউন্ট তৈরী)
+                                        </h2>
+                                        <h3>
+                                          Please select your relevant type (আপনার পছন্দের টাইপটি নির্বাচন করুন)
+                                        </h3>
+                                        
+                                         
+                                    <div class="armper-ca">
+                                    <i class="icon icon-rank"></i>
+                                    <h3>Welcome to 'Create Account' on bdjobs.com. If you are retired army person, you can add your army experience at Employment section in Edit Resume after creating your account.</h3>
+                                    </div>
+                                   
+                                     
+             
+             
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                            	<a href="http://mybdjobs.bdjobs.com/createaccount.asp#wb" data-toggle="tab" onclick="LoadForm(0);formVersion(0);LoadLocations(0);" id="wcj">
+                                                <div class="cart-wc">
+                                                	<div class="wc-b wc-title">
+                                                        <div class="text-center t-title" style="background-position: 50% 20px;">
+                                                            <h2>General Category</h2>
+                                                        </div>
+                                                        <div class="text-center p-examp">
+                                                            Accountant, Project Manager, Engineer, Lecturer, Merchandiser
+                                                        </div>
+                                                        <div class="text-center ca-btn">
+                                                            <!--Create Account-->
+                                                            <button type="button" class="btn">Create Account</button>
+                                                        </div>
+                                                     </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6">
+                                            	<a href="http://mybdjobs.bdjobs.com/createaccount.asp#wb" data-toggle="tab" onclick="LoadForm(1);formVersion(1);LoadLocations(1);" id="bcj">
+                                                <div class="cart-bc">
+                                                	<div class="bc-b bc-title">
+                                                        <div class="text-center t-title">
+                                                        	<h2>স্পেশাল স্কিল্‌ড ক্যাটাগরি</h2>
+                                                        </div>
+                                                        <div class="text-center p-examp">
+                                                            ড্রাইভার, মেকানিক, ইলেকট্রিশিয়ান, নার্স, সিকিউরিটি গার্ড, শেফ/বাবুর্চী, পিয়ন
+                                                        </div>
+                                                        <div class="text-center ca-btn">
+                                                          <button type="button" class="btn tb-bn">&nbsp; অ্যাকাউন্ট তৈরী &nbsp;</button>                     
+                                                        </div>
+                                                     </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <form id="table" action="https://mybdjobs.bdjobs.com/createaccountinsert.asp" name="registration" method="post" onsubmit="return formValidation();">
+                                    
+                                    <div class="tab-content" style="display: none;">
+                                    			
+                                                  <div class="tab-cmn">
+                                                        <div class="row">
+                                                            <div class="col-sm-8">
+                                                                <div class="b-return tb-bn" id="b_returnEN">
+                                                                    <a class="p-p-return" href="javascript:void(0)"><img src="./Create Account_files/back-arrow.svg" alt="" title=""> <span>Back<span></span></span></a>
+                                                                    <h1>Create Account</h1>
+                                                                </div>
+                                                                <div class="b-return" id="b_returnBN">
+                                                                    <a class="p-p-return" href="javascript:void(0)"><img src="./Create Account_files/back-arrow.svg" alt="" title=""> <span>পূর্বের পাতা<span></span></span></a>
+                                                                    <h1>অ্যাকাউন্ট তৈরী করুন</h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                
+                                                                <div class="social-button" id="social-button">
+                                                                    
+                                                                    <div class="sb-ins">Import data</div>
+                                                                    
+                                                                    <a id="fbbutton" href="javascript:fb_login();" class="btn btn-default btn-facebook"><img src="./Create Account_files/fb.png"><span>Facebook</span></a>
+                            
+                                                                    <a id="gpbutton" href="javascript:gp_login();" class="btn btn-default btn-google"><img src="./Create Account_files/google.png"><span>Google</span></a>
+                                                                    <a href="javascript:onLinkedInLoad();" id="lkbutton" class="btn btn-default btn-linkedin"><img src="./Create Account_files/linkedin.png"><span>Linkedin</span></a>
+                            
+                            
+                            
+                                                                </div>
+                                                                
+                                                                <div class="social-button-bc" id="social-button-bc">
+                                                                    <a id="fbbutton" href="javascript:fb_login();" class="btn"><i class="icon-facebook"></i><span>ফেইসবুক থেকে তথ্য আনুন</span></a>
+                                                                </div>
+                                                                
+                                                                
+                                                            </div>
+                                                      </div>
+                                                  </div>
+                                                  		                                                     
+                                                  <div class="tab-pane fade in active" id="wb"> <!--id="wb"--> 
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                            	<h4 id="name">Name</h4>
+                                                                <div class="form-group">
+                                                                    <input class="form-control from-control-login" placeholder="First Name" type="text" name="txtFirstName" id="txtFirstName" value="">
+                                                                    <span id="txtFirstName_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                                </div>
+                                                        </div>
+                                                            <div class="col-md-6">
+                                                            	<h4 id="gender">Gender</h4>
+                                                                        
+                                                                        <div class="g-s" data-toggle="buttons">
+                                                                            <label class="btn" id="male_Btn">
+                                                                                <input type="radio" name="cboGender" value="M" autocomplete="off"> <i class="icon-gender-male"></i> <span id="male">Male</span>
+                                                                            </label>
+                                                                            <label class="btn" id="female_btn">
+                                                                                <input type="radio" name="cboGender" value="F" autocomplete="off"> <i class="icon-gender-female"></i> <span id="female"> Female</span>
+                                                                            </label>
+                                                                            <label class="btn" id="other_btn">
+                                                                                <input type="radio" name="cboGender" value="O" autocomplete="off"> <i class="icon-gender-others"></i> <span id="other">Others</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    
+                                                                    <span id="cboGender_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                             
+                                                             </div>   
+                                                        </div>                         	
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                            	<h4 id="category">Select your skill from following category</h4>
+                                                                <div class="form-group" id="spnCategory">
+                                                                    <select name="selected_Cat" id="selected_Cat" required="required" class="form-control from-control-login">
+                 
+                 	<option value="-1">Select</option>
+          			<option value="1">Accounting/Finance</option><option value="2">Bank/Non-Bank Fin. Institution</option><option value="3">Commercial/Supply Chain</option><option value="4">Education/Training</option><option value="5">Engineer/Architect</option><option value="6">Garments/Textile</option><option value="7">General Management/Admin</option><option value="8">IT/Telecommunication</option><option value="9">Marketing/Sales</option><option value="10">Media/Advertisement/Event Mgt.</option><option value="11">Medical/Pharma</option><option value="12">NGO/Development</option><option value="13">Research/Consultancy</option><option value="14">Secretary/Receptionist</option><option value="15">Data Entry/Operator/BPO</option><option value="16">Customer Support/Call Centre</option><option value="17">HR/Org. Development</option><option value="18">Design/Creative</option><option value="19">Production/Operation</option><option value="20">Hospitality/ Travel/ Tourism</option><option value="21">Beauty Care/ Health &amp; Fitness</option><option value="22">Law/Legal</option><option value="23">Electrician/ Construction/ Repair</option><option value="24">Security/Support Service</option><option value="25">Driving/Motor Technician</option><option value="26">Agro (Plant/Animal/Fisheries)</option>
+        
+        		        </select>
+                        </div>
+                                                                    <span id="selected_Cat_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                                
+            
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <input type="hidden" value="0" name="jobCategoryRadio" id="functionRadio">
+                                           <input type="hidden" value="EN" name="version" id="version">
+                                           
+                                           
+                                                        
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-md-6" id="emailDiv" style="display:block;">
+                                                                <span class="pull-left">
+                                                                	<h4>Email Address</h4>
+                                                                </span>
+                                                                <span class="pull-right" id="emailuIDBtn" style="display:block;">
+                                                                	<div class="bc-ca-e">
+                                                                        <input type="radio" name="userNameRadio" value="email" id="userNameRadio1" onclick="setUserName(this.value);">
+                                                                        
+                                                                        <label for="userNameRadio1"><i class="icon-check-sign"></i> Set as User ID</label>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control from-control-login" placeholder="Email Address " id="txtEmail1" name="txtEmail1" value="">
+                                                                   <span id="txtEmail1_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                                    <span id="common_message_email_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                                    <span id="common_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                            	<div class="row">
+                                                                	<div class="col-sm-12">
+                                                                    	
+                                                                        <span class="pull-left">
+                                                                            <h4 id="mbl">Mobile Number</h4>
+                                                                        </span>
+                                                                        <span class="pull-right" id="uIDBtn" style="display:block;">
+                                                                            <div class="bc-ca-e">
+                                                                                <input type="radio" name="userNameRadio" value="mobile" id="userNameRadio2" onclick="setUserName(this.value);">
+                                                                                
+                                                                                <label for="userNameRadio2">
+                                                                                <i class="icon-check-sign"></i> 
+                                                                                Set as User ID</label>
+                                                                            </div>
+                                                                        </span>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                 
+                                                                <input type="hidden" id="txtUserName" name="txtUserName">
+                                                                
+                                                                <div class="row">
+                                                                  <div class="col-sm-6 cl-pr" id="country">
+                                                                        	<select name="txtCountryCode" id="txtCountryCode" required="required" class="form-control from-control-login">
+
+                 
+                 
+                 	<option value="-1">Select</option>
+          			<option value="93">Afghanistan (93)</option><option value="355">Albania (355)</option><option value="213">Algeria (213)</option><option value="376">Andorra (376)</option><option value="244">Angola (244)</option><option value="264">Anguilla (264)</option><option value="672">Antarctica (672)</option><option value="268">Antigua (268)</option><option value="54">Argentina (54)</option><option value="374">Armenia (374)</option><option value="297">Aruba (297)</option><option value="61">Australia (61)</option><option value="43">Austria (43)</option><option value="994">Azerbaijan (994)</option><option value="242">Bahamas (242)</option><option value="973">Bahrain (973)</option><option value="88" selected="">Bangladesh (88)</option><option value="246">Barbados (246)</option><option value="375">Belarus (375)</option><option value="32">Belgium (32)</option><option value="501">Belize (501)</option><option value="229">Benin (229)</option><option value="441">Bermuda (441)</option><option value="975">Bhutan (975)</option><option value="591">Bolivia (591)</option><option value="387">Bosnia and Herzegovina (387)</option><option value="267">Botswana (267)</option><option value="55">Brazil (55)</option><option value="284">British Virgin Islands (284)</option><option value="673">Brunei (673)</option><option value="359">Bulgaria (359)</option><option value="226">Burkina Faso (226)</option><option value="257">Burundi (257)</option><option value="855">Cambodia (855)</option><option value="237">Cameroon (237)</option><option value="1">Canada (1)</option><option value="238">Cape Verde (238)</option><option value="236">Central African Republic (236)</option><option value="235">Chad (235)</option><option value="56">Chile (56)</option><option value="86">China (86)</option><option value="57">Colombia (57)</option><option value="269">Comoros (269)</option><option value="242">Congo (242)</option><option value="243">Congo (Zaire) (243)</option><option value="682">Cook Islands (682)</option><option value="506">Costa Rica (506)</option><option value="225">Cote d'Ivoire (Ivory Coast) (225)</option><option value="385">Croatia (385)</option><option value="53">Cuba (53)</option><option value="357">Cyprus (357)</option><option value="420">Czech Republic (420)</option><option value="45">Denmark (45)</option><option value="253">Djibouti (253)</option><option value="767">Dominica (767)</option><option value="809">Dominican Republic (809)</option><option value="670">East Timor (670)</option><option value="593">Ecuador (593)</option><option value="20">Egypt (20)</option><option value="503">El Salvador (503)</option><option value="240">Equatorial Guinea (240)</option><option value="291">Eritrea (291)</option><option value="372">Estonia (372)</option><option value="251">Ethiopia (251)</option><option value="500">Falkland Islands (500)</option><option value="691">Federated States of Micronesia (691)</option><option value="679">Fiji (679)</option><option value="358">Finland (358)</option><option value="33">France (33)</option><option value="594">French Guiana (594)</option><option value="689">French Polynesia (689)</option><option value="241">Gabon (241)</option><option value="995">Georgia (995)</option><option value="49">Germany (49)</option><option value="233">Ghana (233)</option><option value="350">Gibraltar (350)</option><option value="30">Greece (30)</option><option value="299">Greenland (299)</option><option value="473">Grenada (473)</option><option value="590">Guadeloupe (590)</option><option value="502">Guatemala (502)</option><option value="224">Guinea (224)</option><option value="245">Guinea-Bissau (245)</option><option value="592">Guyana (592)</option><option value="509">Haiti (509)</option><option value="504">Honduras (504)</option><option value="852">Hong Kong (852)</option><option value="36">Hungary (36)</option><option value="354">Iceland (354)</option><option value="91">India (91)</option><option value="62">Indonesia (62)</option><option value="98">Iran (98)</option><option value="964">Iraq (964)</option><option value="353">Ireland (353)</option><option value="972">Israel (972)</option><option value="39">Italy (39)</option><option value="876">Jamaica (876)</option><option value="81">Japan (81)</option><option value="962">Jordan (962)</option><option value="7">Kazakhstan (7)</option><option value="254">Kenya (254)</option><option value="686">Kiribati (686)</option><option value="965">Kuwait (965)</option><option value="996">Kyrgyzstan (996)</option><option value="856">Laos (856)</option><option value="371">Latvia (371)</option><option value="961">Lebanon (961)</option><option value="266">Lesotho (266)</option><option value="231">Liberia (231)</option><option value="218">Libya (218)</option><option value="423">Liechtenstein (423)</option><option value="370">Lithuania (370)</option><option value="352">Luxembourg (352)</option><option value="853">Macau (853)</option><option value="389">Macedonia (389)</option><option value="261">Madagascar (261)</option><option value="265">Malawi (265)</option><option value="60">Malaysia (60)</option><option value="960">Maldives (960)</option><option value="223">Mali (223)</option><option value="356">Malta (356)</option><option value="692">Marshall Islands (692)</option><option value="596">Martinique (596)</option><option value="222">Mauritania (222)</option><option value="230">Mauritius (230)</option><option value="262">Mayotte (262)</option><option value="52">Mexico (52)</option><option value="373">Moldova (373)</option><option value="377">Monaco (377)</option><option value="976">Mongolia (976)</option><option value="382">Montenegro (382)</option><option value="664">Montserrat (664)</option><option value="212">Morocco (212)</option><option value="258">Mozambique (258)</option><option value="95">Myanmar (95)</option><option value="264">Namibia (264)</option><option value="674">Nauru (674)</option><option value="977">Nepal (977)</option><option value="31">Netherlands (31)</option><option value="599">Netherlands Antilles (599)</option><option value="687">New Caledonia (687)</option><option value="64">New Zealand (64)</option><option value="505">Nicaragua (505)</option><option value="227">Niger (227)</option><option value="234">Nigeria (234)</option><option value="850">North Korea (850)</option><option value="47">Norway (47)</option><option value="968">Oman (968)</option><option value="92">Pakistan (92)</option><option value="680">Palau (680)</option><option value="507">Panama (507)</option><option value="675">Papua New Guinea (675)</option><option value="595">Paraguay (595)</option><option value="51">Peru (51)</option><option value="63">Philippines (63)</option><option value="48">Poland (48)</option><option value="351">Portugal (351)</option><option value="974">Qatar (974)</option><option value="40">Romania (40)</option><option value="7">Russia (7)</option><option value="250">Rwanda (250)</option><option value="869">Saint Kitts and Nevis (869)</option><option value="758">Saint Lucia (758)</option><option value="508">Saint Pierre and Miquelon (508)</option><option value="784">Saint Vincent and the Grenadines (784)</option><option value="685">Samoa (685)</option><option value="378">San Marino (378)</option><option value="239">Sao Tome and Principe (239)</option><option value="966">Saudi Arabia (966)</option><option value="221">Senegal (221)</option><option value="381">Serbia (381)</option><option value="248">Seychelles (248)</option><option value="232">Sierra Leone (232)</option><option value="65">Singapore (65)</option><option value="421">Slovakia (421)</option><option value="386">Slovenia (386)</option><option value="677">Solomon Islands (677)</option><option value="252">Somalia (252)</option><option value="27">South Africa (27)</option><option value="82">South Korea (82)</option><option value="2011">South Sudan (2011)</option><option value="34">Spain (34)</option><option value="94">Sri Lanka (94)</option><option value="249">Sudan (249)</option><option value="597">Suriname (597)</option><option value="268">Swaziland (268)</option><option value="46">Sweden (46)</option><option value="41">Switzerland (41)</option><option value="963">Syria (963)</option><option value="886">Taiwan (886)</option><option value="992">Tajikistan (992)</option><option value="255">Tanzania (255)</option><option value="66">Thailand (66)</option><option value="220">The Gambia (220)</option><option value="228">Togo (228)</option><option value="676">Tonga (676)</option><option value="868">Trinidad and Tobago (868)</option><option value="216">Tunisia (216)</option><option value="90">Turkey (90)</option><option value="993">Turkmenistan (993)</option><option value="649">Turks and Caicos Islands (649)</option><option value="688">Tuvalu (688)</option><option value="256">Uganda (256)</option><option value="380">Ukraine (380)</option><option value="971">United Arab Emirates (971)</option><option value="44">United Kingdom (44)</option><option value="1">United States (1)</option><option value="598">Uruguay (598)</option><option value="998">Uzbekistan (998)</option><option value="678">Vanuatu (678)</option><option value="58">Venezuela (58)</option><option value="84">Vietnam (84)</option><option value="967">Yemen (967)</option><option value="260">Zambia (260)</option><option value="263">Zimbabwe (263)</option>
+                                                                        
+                                                                        </select>
+                                                                  </div>
+                                                                  <div class="col-sm-6 voffset-s">					
+                                                                  	<input type="tel" class="form-control from-control-login" placeholder="019XXXXXXXX" id="txtMobile" name="txtMobile" value="" maxlength="13" onkeypress="return isNumberKey(event)">
+                                                                  </div>
+                                                                </div>
+                                                                <script>
+																superplaceholder({
+																	el: txtMobile,
+																	sentences: [ '017XXXXXXXX', '018XXXXXXXX', '019XXXXXXXX', '015XXXXXXXX' ],
+																	options: {
+																		loop: true,
+																		startOnFocus: false
+																	}
+																})
+																</script>
+                                                                <span id="txtMobile_message" class="msg" style="font-weight: bold; color: rgb(255, 102, 102);"></span>
+                                                                <span id="txtUserName_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>
+                                                                <span id="common_message_mob_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span>  
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="user-info-main">
+										
+                                                            <div id="userInfo" class="userInfo" style="display:block;">
+                                                                <div class="row"><!--voffset-->
+                                                                    <div class="col-md-6">
+                                                                        <h4>Password</h4>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            
+                                                                           <input class="form-control from-control-login" placeholder="Password" id="txtPassword" type="password" maxlength="12" name="txtPassword" value="">
+                                                                            
+                                                                           
+                                                                        </div>
+                                                                        <div class="password-strength">
+                                                                            <p class="ps-note">Use at least 8 to 12 characters.
+                                                                                <br> </p>
+                        
+                                                                            <div class="progress">
+                        
+                                                                                <div class="" id="progressbar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                                                </div>
+                        
+                                                                            </div>
+                                                                            
+                                                                            <span id="PasswordStrength_message" style="color: rgb(255, 102, 102); font-weight: bold; display: inline;" class="msg"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                    	<h4>&nbsp;</h4>
+                                                                        <div class="form-group">
+                                                                            
+                                                                                 <input class="form-control from-control-login" placeholder="Retype Password" id="txtRetypePassword" type="password" maxlength="12" name="txtRetypePassword" value="" onblur="CheckREPassword(&#39;EN&#39;);">
+                                                                            <span id="PasswordCheck_message" class="span msg" style="color: rgb(255, 102, 102); font-weight: bold;"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                 
+                                                                
+                                                            </div>
+                        
+                                                            <div class="row">
+                                                                <div class="user-contents">
+                                                                  <div id="termAndCondition">
+                                                                    <div class="col-md-12 col-xs-12">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" id="checkCodition" name="checkCodition" value="" onclick="Check_TermsAndCondition(this.value);">
+                                                                        <p>
+                                                                            I agree to the Bdjobs.com Terms of use.
+                                                                        </p>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-xs-12">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox">
+                                                                        <p>
+                                                                            Subscribe to Bdjobs Newsletter.
+                                                                        </p>
+                                                                     </label>
+                                                                    </div>
+                                                                    </div>
+                                                                    <input type="hidden" name="hSMId" id="hSMId" value="">
+                                <input type="hidden" name="hSMediaType" id="hSMediaType" value="">
+                                <input type="hidden" name="hIsSMLogin" id="hIsSMLogin" value="false">
+								<input type="hidden" name="categoryType" id="categoryType" value="0">
+                        
+                                                                    
+                        
+                                                                    <div class="col-md-12 col-xs-12">
+                                                                        <button type="submit" id="Continue" class="btn view-btn sign-up" disabled="disabled">
+                                                                            Create Account
+                                                                        </button>
+                        
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>                                    
+                                                  </div>
+                                                 
+                                                  
+                                                                                                      
+                                      </div>
+                                    
+                                    </form>
+									
+                          </div>
+						
+                      </div>
+                            	
+                  </div>
+
+                        <div class="col-md-4">
+                            <div class="features-area">
+                                <ul>
+                                    <li>
+                                        <img src="./Create Account_files/ficon_01.png" alt="">
+                                        <p>
+                                            Get instant Notification about New job Posting, Match Jobs and More.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <img src="./Create Account_files/ficon_02.png" alt="">
+                                        <p class="lipad">
+                                            Your world of Jobs on the go. Search, View, Apply to any jobs from anywhere.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <img src="./Create Account_files/ficon_03.png" alt="">
+                                        <p>
+                                            Receive Messages from Employers and Increase your Possibility.
+                                        </p>
+                                    </li>
+
+                                    <li style="margin-bottom: 0px">
+                                        <img src="./Create Account_files/ficon_04.png" alt="">
+                                        <p class="">
+                                            Join 10,000+ Companies who have posted more than 1,50,000+ Jobs!
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="help-area">
+                                <h2>
+                                  Need Help?
+                                </h2>
+
+                                <p>
+                                    If you are facing any problem and have any query then feel free to ask.
+                                </p>
+
+                                <h4 class="phone-number">
+                                  <i class="glyphicon glyphicon-phone"></i>
+                                  16479
+                                </h4>
+
+                                <h4 class="email-address">
+                                  <i class="glyphicon glyphicon-envelope"></i>
+                                   support@bdjobs.com
+                                </h4>
+                            </div>
+                            
+                            
+                            <div class="aregister">
+                                <h2>
+                                  Already Registered?
+                                </h2>
+                                <a href="http://mybdjobs.bdjobs.com/mybdjobs/default.asp">
+                                    <button type="button" class="btn signin-btn log-in">
+                                        Sign In Now
+                                    </button>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                        
+
+              </div>
+          </div>
+            </div>
+        </div>          
+        
+        
+    
+
+
+<script type="text/javascript">	
+	 $(document).ready(function() {
+		$('.intp').hide();
+        $('.showintp').click(function() {
+                $('.intp').slideToggle(500);
+				$("html, body").animate({ scrollTop: $(document).height() }, 500);
+        });
+		$('.intp ul li').click(function() {
+                $('.intp').slideUp(500);
+        });
+		
+		$('.ot-partners').click(function(){
+		$('.oth-partners').slideToggle();
+		$(this).find('i').toggleClass('icon-plus icon-minus')
+		});
+    });
+</script>
+<script type="text/javascript">
+          $(document).on("click",".fatFooter .in-partners",function(){
+            $('.fatFooter .all-partners').slideToggle();
+            $(this).find('i').toggleClass('icon-plus icon-minus');
+          });
+</script>
+
+
+<!-- Fat footer -->
+
+<div class="fatFooter">
+    	<div class="container">
+       		 <div class="row">
+           		 <div class="footer">
+                <!--<div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>
+                      Bdjobs.com Ltd. is the first and leading career management site in the country. Eight young business and IT professional backed by strong command over e-business and .. </p>
+                    <a href="http://bdjobs.com/about.asp" title="More" class="btn btn-f-more">More</a>
+                </div>-->
+               		  <div class="col-md-3 col-sm-3">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a target="_blank" href="http://www.bdjobs.com/about.asp">About Bdjobs.com</a></li>
+                        <li><a target="_blank" href="http://www.bdjobs.com/tos.asp">Terms &amp; Conditions</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="in-partners">International Partners&nbsp;<i class="icon-plus"></i></a>
+                        </li>
+                        <li>
+                            <ul class="all-partners">
+                              <li><a href="http://www.babajob.com/" target="_blank">BabaJob</a> <strong>(India)</strong></li>
+                              <li><a href="http://www.brightermonday.com/" target="_blank">Brighter Monday</a> <strong> (<!-- East --> Africa)</strong></li>
+                              <li><a href="http://www.catho.com.br/" target="_blank">Catho</a> <strong>(Brazil)</strong></li>
+                              <li><a href="http://www.jobberman.com/" target="_blank">Jobberman</a> <strong>(West Africa)</strong></li>
+                              <li><a href="http://www.jobsdb.com/" target="_blank">jobsDB</a> <strong>(S.E Asia)</strong></li>
+                              <li><a href="http://www.jobstreet.com/" target="_blank">JobStreet</a> <strong>(S.E Asia)</strong></li>
+                              <li><a href="https://www.jora.com/" target="_blank">Jora</a> <strong>(Worldwide)</strong></li>
+                              <li><a href="http://www.manager.com.br/" target="_blank">Manager</a> <strong>(Brazil)</strong></li>
+                              <li><a href="https://www.occ.com.mx/" target="_blank">OCC Mundial </a> <strong>(Mexico)</strong></li>
+                              <li><a href="http://www.seek.com.au/" target="_blank">SEEK</a> <strong>(Australia)</strong></li>
+                              <li><a href="https://www.workana.com/" target="_blank">Workana</a> <strong>(Latin America)</strong></li>
+                              <li><a href="http://www.zhaopin.com/" target="_blank">Zhaopin</a> <strong>(China)</strong></li>
+                           </ul>
+                        </li>
+                        
+                        <li>
+                          <a href="javascript:void(0);" class="ot-partners">Other Partners&nbsp;<i class="icon-plus"></i></a>
+                        </li>
+                        <li>
+                            <ul class="oth-partners">
+                                 <li><a href="https://ajkerdeal.com/" target="_blank">AjkerDeal</a> <strong>(Bangladesh)</strong></li>
+                                 <li><a href="https://www.beshto.com/" target="_blank">Beshto</a> <strong> (Bangladesh)</strong></li>
+                                 <li><a href="http://www.aspiringminds.com/" target="_blank">Aspiring Minds</a> <strong>(India)</strong></li>
+                            </ul>
+                        </li>
+                        
+                        
+                        <li><a target="_blank" href="http://bdjobs.com/policy/Privacy_policy.asp">Privacy  Policy</a></li>
+                        <li><a target="_blank" href="http://jobs.bdjobs.com/feedback.asp">Feedback</a></li>
+                        <li><a target="_blank" href="http://www.bdjobs.com/contact.asp">Contact Us</a></li>
+                    </ul>
+                </div>
+                	 <div class="col-md-3 col-sm-3">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                    
+                        <li><a target="_blank" href="http://mybdjobs.bdjobs.com/createaccount.asp">Create Account</a></li>
+                        <li><a target="_blank" href="http://www.bdjobs.com/career/counsel.asp">Career Counseling</a></li>
+                        <li><a target="_blank" href="http://mybdjobs.bdjobs.com/">My Bdjobs</a></li>
+                        <li><a target="_blank" href="http://mybdjobs.bdjobs.com/mybdjobs/faq.asp#1">FAQ</a></li>
+                        <li><a target="_blank" href="http://mybdjobs.bdjobs.com/mybdjobs/videoHelp.asp">Video Guides</a></li>
+                    </ul>
+                </div>
+                	  <div class="col-md-3 col-sm-3">
+                    <h4>Employers</h4>
+                    <ul>
+                       
+                           <li>   <a target="_blank" href="http://corporate3.bdjobs.com/Corporate_NewAccount.asp">Create Account</a></li>
+                        <li><a target="_blank" href="http://corporate3.bdjobs.com/services.asp">Products/Service</a></li>
+                        <li><a target="_blank" href="http://corporate3.bdjobs.com/">Post a Job</a></li>
+                        <li><a target="_blank" href="http://corporate3.bdjobs.com/help/help.asp">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Tools &amp; Social Media</h4>
+                    <ul>
+                        <li><a target="_blank" href="http://www.bdjobs.com/apps/"><img class="footer-icon" src="./Create Account_files/bdjobs-android-app-color.svg" alt="App">Mobile App</a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/mybdjobs"><img class="footer-icon" src="./Create Account_files/facebook-color.svg" alt="Facebook">Facebook</a></li>
+                        <li><a target="_blank" href="https://plus.google.com/+BdjobscomLtdDhaka"><img class="footer-icon" src="./Create Account_files/google-plus-color.svg" alt="Google Plus">Google+</a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/mybdjobs"><img class="footer-icon" src="./Create Account_files/youtube-color.svg" alt="Youtube">Youtube</a></li>
+                        <li>
+                        	<h5 class="app-heading">Download Mobile App</h5>
+                        </li>
+                        <li>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.bdjobs.app">
+                            <img class="google-play-badge" src="./Create Account_files/google-play-badge.svg" alt="">
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="f-contacts">
+                        Need any support ? Call to <span>16479</span>
+                    </div>
+                </div>
+                 </div>
+            </div>
+        </div>
+	</div>
+<div class="scroll-top-wrapper ">
+         <span class="scroll-top-inner">
+         <i class="glyphicon glyphicon-circle-arrow-up"></i>
+         </span>
+</div>			   
+
+
+
+ <script type="text/javascript" src="./Create Account_files/edit-resume.js.download"></script> 
+
+
+ 
+
+ <div id="Wrapperbox" style="display:none;">
+  <iframe id="Iframe" name="Iframe" frameborder="0" width="674px" src="./Create Account_files/saved_resource.html"></iframe>
+</div>
+<script type="text/javascript" src="./Create Account_files/bootstrap.min.js.download"></script>
+
+<!--- CUSTOM JQUERY SCRIPTS -->
+<script type="text/javascript" src="./Create Account_files/responsive-tabs.js.download"></script>
+<!--- CUSTOM JQUERY SCRIPTS --> 
+<!-- GO TO TOP--> 
+
+<script type="text/javascript" src="./Create Account_files/bootstrap-datepicker.js.download"></script>
+<script src="./Create Account_files/client_platform.js.download" async="" defer="" gapi_processed="true"></script>
+<script type="text/javascript" src="./Create Account_files/in.js.download">
+api_key:81w4aupl7jopgl
+
+authorize: true
+
+</script>
+<script type="text/javascript" src="./Create Account_files/social_account_create.js.download"></script>
+
+
+<script type="text/javascript">
+                     $(function(){
+                      
+                         $(document).on( 'scroll', function(){
+                      
+                             if ($(window).scrollTop() > 100) {
+                                 $('.scroll-top-wrapper').addClass('show');
+                             } else {
+                                 $('.scroll-top-wrapper').removeClass('show');
+                             }
+                         });
+                      
+                         $('.scroll-top-wrapper').on('click', scrollToTop);
+                     });
+					$('#txtEmail1').keyup(function(){
+						str = $(this).val()
+						str = str.replace(/\s/g,'')
+						$(this).val(str)
+					});
+					
+                      
+                     function scrollToTop() {
+                         verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+                         element = $('body');
+                         offset = element.offset();
+                         offsetTop = offset.top;
+                         $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+                     }
+					 $( document ).ready(function() {
+  $('.datepicker').datepicker({ format: "mm/dd/yyyy" }).on('changeDate', function(ev){
+    $(this).datepicker('hide');
+});
+});
+
+//$(function(){
+//// Enabling Popover 
+//    $("[data-toggle=popover]").popover();
+//
+//   
+//});
+
+//$(document).ready(function(){
+//	 $(document).on('focus',"input.name-msg", function() {
+//         $(".mtd-n").css("display", "block");
+//     }).on('blur',"input.name-msg", function() {
+//         $(".mtd-n").css("display", "none").fadeOut(2000);
+//     });
+//	
+//	 $(document).on('focus',"input.lname-msg", function() {
+//        $(".mtd-ln").css("display", "block");
+//     }).on('blur',"input.lname-msg", function() {
+//        $(".mtd-ln").css("display", "none").fadeOut(2000);
+//     });
+//	 
+//	 $(document).on('focus',"input.phoem-msg", function() {
+//        $(".mtd-phoem").css("display", "block");
+//     }).on('blur',"input.phoem-msg", function() {
+//        $(".mtd-phoem").css("display", "none").fadeOut(2000);
+//     });
+//	
+//
+//});
+
+
+	$(function() {
+	   $('.tab-content').hide();
+   });
+   
+   $('#wcj').click(function() {
+	   $('.mob-cart').hide();
+	   $('.tab-content').show();
+	   $('.social-button-bc').hide();
+	   $('.social-button').show();
+	   $('#b_returnEN').show();
+	   $('#b_returnBN').hide();
+	   document.getElementById("Continue").disabled=true;
+   });
+   
+   $('#bcj').click(function() {
+	   $('.mob-cart').hide();
+	   $('.tab-content').show();
+	   $('.social-button').hide();
+	   $('.social-button-bc').show();
+	   $('#b_returnEN').hide();
+	   $('#b_returnBN').show();
+	   document.getElementById("Continue").disabled=false;
+	   document.getElementById("Continue").className="btn view-btn sign-up";
+	  
+   });
+   
+   $('.p-p-return').click(function() {
+	   $('.tab-content').hide();
+	   $('.mob-cart').show();
+   });
+   
+   
+   
+   
+   
+   
+   
+	$('.g-s').on('click', 'label', function() {
+		$('.g-s label.active').removeClass('active');
+		$(this).addClass('active');
+	});
+
+$(document).on("change", "#txtCountryCode", function() {
+		if ($("#txtCountryCode option:selected").val() != "88") {
+			$("#txtMobile").attr("superplaceholder", "false");
+		} else {
+			$("#txtMobile").attr("superplaceholder", "true");
+		}
+	});
+//	 $(document).ready(function() {
+//		$('.intp').hide();
+//        $('.showintp').click(function() {
+//                $('.intp').slideToggle(500);
+//				$("html, body").animate({ scrollTop: $(document).height() }, 500);
+//        });
+//		$('.intp ul li').click(function() {
+//                $('.intp').slideUp(500);
+//        });
+//    });
+
+ </script>
+
+
+
+
+    
+    
+
+
+<iframe name="oauth2relay575605297" id="oauth2relay575605297" src="./Create Account_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Create Account_files/lY4eZXm_YWu.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Create Account_files/lY4eZXm_YWu(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div></body></html>

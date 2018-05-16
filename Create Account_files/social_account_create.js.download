@@ -1,0 +1,316 @@
+
+ 
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+     
+    });
+  }
+
+  window.fbAsyncInit = function() {
+	  
+  FB.init({
+    appId      : '1117783308285421',
+    cookie     : true,  // enable cookies to allow the server to access 
+   // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.5' // use graph api version 2.5
+  });
+
+  FB.getLoginStatus(function(response) {
+   
+  });
+
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function getUserInformation() {
+  
+			   FB.api('/me?fields=id,first_name,middle_name,last_name,gender,email',
+				  function(response) 
+				  {
+					  
+					  if (response.id!="")
+					  {
+						   $('#userInfo').hide();
+						   if(document.getElementById("categoryType").value == 1)
+							{
+								document.getElementById("termAndCondition").style.display = "none";
+							}
+							else
+							{
+								document.getElementById("termAndCondition").style.display = "block";
+							}
+							document.getElementById("uIDBtn").style.display = "none"
+							document.getElementById("emailuIDBtn").style.display = "none"
+		
+							//$('#txtFirstName').val(response.first_name);
+							if (response.middle_name!=null)
+							{
+								
+								$('#txtFirstName').val(response.first_name+" "+response.middle_name+" "+response.last_name);
+							}
+							else
+							{
+								$('#txtFirstName').val(response.first_name+" "+response.last_name);
+							}
+							
+							if (response.gender==null)
+							{
+								//$('#cboGender').val('-1');
+							}
+							else
+							{
+								$('#male_Btn').removeClass("active");
+								$('#female_btn').removeClass("active");
+								$('#other_btn').removeClass("active");
+
+								var genderTxt;
+								if(response.gender=='male')
+								{
+									genderTxt = "M"
+								}else if(response.gender=='female')
+								{
+									genderTxt = "F"
+								}else
+								{
+									genderTxt = "O"
+								}
+
+								$("input:radio").each(function(){
+									if($(this).attr('name') == "cboGender")
+									{
+											if($(this).val() == genderTxt)
+											{
+												$(this).prop('checked', true);
+												$(this).parent("label").addClass("active");
+											}
+									}
+									
+								})
+							}
+							
+							$('#txtEmail1').val(response.email);
+							$('#hSMId').val(response.id);
+							$('#hSMediaType').val('F');
+							$('#hIsSMLogin').val(true);
+														
+							
+					   document.getElementById("gpbutton").disabled=false;
+
+					  
+					  }
+				  });
+				  
+     
+  
+  }
+  
+function fb_login()
+{
+document.getElementById("gpbutton").disabled=true;
+      FB.login(function(response) {
+
+         if (response.authResponse)
+
+         {
+             getUserInformation(); //Get User Information.
+
+          } 
+		  
+
+       },{scope: 'public_profile,email'});
+
+}
+
+
+
+function gp_login() 
+{
+  var myParams = {
+    'clientid' :"656340698751-kt8lk3hujr2grfo7rnjmddb85rmg1c2q.apps.googleusercontent.com",
+    'cookiepolicy' : 'single_host_origin',
+    'callback' : 'onSignInCallback',
+    'approvalprompt':'force',
+    'scope' : 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email'
+  };
+  gapi.auth.signIn(myParams);
+  document.getElementById("fbbutton").disabled=true;
+
+}
+
+  function onSignInCallback(resp) {
+    gapi.client.load('plus', 'v1', apiClientLoaded);
+  }
+//
+//  *
+//   * Sets up an API call after the Google API client loads.
+//   
+  function apiClientLoaded() {
+    gapi.client.plus.people.get({userId: 'me'}).execute(handleEmailResponse);
+  }
+//
+//  *
+//   * Response callback for when the API client receives a response.
+//   *
+//   * @param resp The API response object with the user email and profile information.
+//   
+  function handleEmailResponse(resp) {
+	  var email = '', id='';
+	     
+            if(resp['emails'])
+            {
+                for(i = 0; i < resp['emails'].length; i++)
+                {
+                    if(resp['emails'][i]['type'] == 'account')
+                    {
+                        email = resp['emails'][i]['value'];
+                    }
+                }
+            }
+			id=resp['id'];
+			 
+	if (id!="")
+			{
+				$('#userInfo').hide();
+				
+				if(document.getElementById("categoryType").value == 1)
+				{
+					document.getElementById("termAndCondition").style.display = "none";
+				}
+				else
+				{
+					document.getElementById("termAndCondition").style.display = "block";
+				}
+				document.getElementById("uIDBtn").style.display = "none"
+				document.getElementById("emailuIDBtn").style.display = "none"
+							
+				$('#txtFirstName').val(resp['name']['givenName']+" "+resp['name']['familyName']);
+			
+				//$('#txtLastFName').val(resp['name']['familyName']);
+	            
+				 if (resp['gender']==null)
+				 {
+					 //$('#cboGender').val('-1');
+				 }
+				 else
+				 {
+						$('#male_Btn').removeClass("active");
+						$('#female_btn').removeClass("active");
+						$('#other_btn').removeClass("active");
+						
+						var genderTxt;
+						if(resp['gender']=='male')
+						{
+							genderTxt = "M"
+						}else if(resp['gender']=='female')
+						{
+							genderTxt = "F"
+						}else
+						{
+							genderTxt = "O"
+						}
+						
+						$("input:radio").each(function(){
+						if($(this).attr('name') == "cboGender")
+						{
+								if($(this).val() == genderTxt)
+								{
+									$(this).prop('checked', true);
+									$(this).parent("label").addClass("active");
+								}
+						}
+						
+					  })
+				
+				 }
+				$('#txtEmail1').val(email);
+				$('#hSMId').val(id);
+				$('#hSMediaType').val('G');
+				$('#hIsSMLogin').val(true);
+				document.getElementById("fbbutton").disabled=false;
+
+		
+			}
+					
+					
+	
+   
+		
+  
+  }
+
+// 
+//function g_log_out()
+//{
+//    gapi.auth.signOut();
+//    location.reload();
+//	$('#g_sign_in').show();
+//	$('#g_sign_out').hide();
+//}
+
+ 
+
+    function onLinkedInLoad() {
+        IN.UI.Authorize().place();      
+        IN.Event.on(IN, "auth", function () { onLogin(); });
+		
+		
+    }
+	function onlogOut()
+	{
+		IN.UI.Authorize().place();      
+		IN.Event.on(IN, "logout", function () { onLogout(); });
+		
+	}
+	
+
+    function onLogin() {
+            IN.API.Profile("me").fields("id","first-name","maiden-name","last-name", "email-address").result(displayResult); 
+    }  
+    function displayResult(profiles) {
+		 member = profiles.values[0];
+		 $('#userInfo').hide();
+		 if(document.getElementById("categoryType").value == 1)
+		{
+			document.getElementById("termAndCondition").style.display = "none";
+		}
+		else
+		{
+			document.getElementById("termAndCondition").style.display = "block";
+		}
+		document.getElementById("uIDBtn").style.display = "none"
+		document.getElementById("emailuIDBtn").style.display = "none"
+				
+		// $('#txtFirstName').val(member.firstName);
+			    if (member.maidenName!=null  )
+				{
+					
+				$('#txtFirstName').val(member.firstName+" "+member.maidenName+" "+member.lastName);
+				}
+				else
+				{
+					
+					$('#txtFirstName').val(member.firstName+" "+member.lastName);
+
+				}
+				
+	
+				
+				
+				$('#txtEmail1').val(member.emailAddress);
+				$('#hSMId').val(member.id);
+				$('#hSMediaType').val('L');
+				$('#hIsSMLogin').val(true);
+		
+       
+       
+    }  
+
+// JavaScript Document
